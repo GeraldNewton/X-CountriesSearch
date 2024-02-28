@@ -14,7 +14,8 @@ function App() {
         setarr(temp.data);
         setview(temp.data);
       } catch (e) {
-        console.log(e);
+        console.log(e.message);
+        alert(e.message);
       }
     };
     api();
