@@ -36,7 +36,7 @@ function App() {
       let len = val.length;
       let temp = arr.filter(
         (aval) =>
-          aval.name.common.slice(0, len).toLowerCase() === val.toLowerCase()
+          aval.name.common.toLowerCase().includes(val.toLowerCase())
       );
       setview(temp);
       console.log("temp=", temp);
