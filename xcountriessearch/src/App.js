@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (!search.length) setview([]);
+    if (!search.length) setview([...arr]);
     else {
       let id = setTimeout(() => {
         searchOp(search);
@@ -34,7 +34,6 @@ function App() {
   let searchOp = (val) => {
     if (val.length) {
       console.log("in searchOp value=", val);
-      let len = val.length;
       let temp = arr.filter(
         (aval) =>
           aval.name.common.toLowerCase().includes(val.toLowerCase())
@@ -53,8 +52,8 @@ function App() {
     <div className="component">
       <input type="text" onChange={(e) => handleChange(e)} className="input" />
       <div className="countryCard">
-        {arr.length !== 0
-          ? view.map((val) => {
+        {
+           view.map((val) => {
               return (
                 <div key={val.cca3} className="flags">
                   <img
@@ -66,7 +65,7 @@ function App() {
                 </div>
               );
             })
-          : null}
+        }
       </div>
     </div>
   );
