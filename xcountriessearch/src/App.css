@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.containers {
+.countryCard {
   border: 2px solid rosybrown;
   border-radius: 5px;
   text-align: center;

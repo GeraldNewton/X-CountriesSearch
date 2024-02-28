@@ -56,7 +56,7 @@ function App() {
         {arr.length !== 0
           ? view.map((val) => {
               return (
-                <div key={val.cca3} className="containers">
+                <div key={val.cca3} className="countryCard">
                   <img
                     src={val.flags.png}
                     alt={val.flags.alt}
