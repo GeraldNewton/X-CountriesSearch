@@ -49,13 +49,13 @@ function App() {
   };
 
   return (
-    <div className="container">
+    <div className="component">
       <input type="text" onChange={(e) => handleChange(e)} className="input" />
       <div className="flags">
         {arr.length !== 0
           ? view.map((val) => {
               return (
-                <div key={val.cca3} className="countryCard">
+                <div key={val.cca3} className="containers">
                   <img
                     src={val.flags.png}
                     alt={val.flags.alt}

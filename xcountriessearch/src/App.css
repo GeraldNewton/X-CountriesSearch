@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.countryCard {
+.containers {
   border: 2px solid rosybrown;
   border-radius: 5px;
   text-align: center;
@@ -24,6 +24,6 @@
   width: 300px;
   margin: 2% 0%;
 }
-.container {
+.component {
   text-align: center;
 }
