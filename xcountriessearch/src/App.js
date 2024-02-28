@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (!search.length) setview([...arr]);
+    if (!search.length) setview([]);
     else {
       let id = setTimeout(() => {
         searchOp(search);
