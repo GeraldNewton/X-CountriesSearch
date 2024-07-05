@@ -62,7 +62,7 @@ function App() {
                     alt={val.flags.alt}
                     className="image"
                   />
-                  <h3 className="name">{val.name.common}</h3>
+                  <h2 className="name">{val.name.common}</h2>
                 </div>
               );
             })
