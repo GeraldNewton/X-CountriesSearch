@@ -21,7 +21,8 @@
   height: 100px;
 }
 .input {
-  max-width: 600px;
+  min-width: 600px;
+  height:25px;
   margin: 2% 0%;
 }
 .component {
