@@ -13,6 +13,7 @@ function App() {
         let temp = await axios.get("https://restcountries.com/v3.1/all");
         setarr(temp.data);
         setview(temp.data);
+        console.log(temp.data);
       } catch (e) {
         console.log(e.message);
         alert(e.message);
@@ -50,12 +51,12 @@ function App() {
 
   return (
     <div className="component">
-      <input type="text" onChange={(e) => handleChange(e)} className="input" />
-      <div className="countryCard">
+      <input type="text" onChange={(e) => handleChange(e)} className="input" placeholder="Search for countries..."/>
+      <div className="flags">
         {
            view.map((val) => {
               return (
-                <div key={val.cca3} className="flags">
+                <div key={val.cca3} className="countryCard">
                   <img
                     src={val.flags.png}
                     alt={val.flags.alt}

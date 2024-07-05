@@ -1,9 +1,9 @@
-.countryCard {
+.flags {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.flags {
+.countryCard {
   border: 2px solid rosybrown;
   border-radius: 5px;
   text-align: center;
@@ -21,9 +21,12 @@
   height: 100px;
 }
 .input {
-  width: 300px;
+  max-width: 600px;
   margin: 2% 0%;
 }
 .component {
   text-align: center;
+}
+.name{
+  text-transform:capitalize;
 }
